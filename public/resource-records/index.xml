@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>资源记录 on 坦克DNS官方网站</title>
+    <link>https://tankdns.tankprint.online/resource-records/</link>
+    <description>Recent content in 资源记录 on 坦克DNS官方网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 May 2022 11:35:16 +0800</lastBuildDate><atom:link href="https://tankdns.tankprint.online/resource-records/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>介绍</title>
+      <link>https://tankdns.tankprint.online/resource-records/introduction/</link>
+      <pubDate>Wed, 18 May 2022 16:49:07 +0800</pubDate>
+      
+      <guid>https://tankdns.tankprint.online/resource-records/introduction/</guid>
+      <description>TankDNS使用的记录文件是records.json。JSON格式，这是一个被普遍接受的文件格式，关于JSON格式可以点击这里了解
+其实我想表达的是TankDNS记录添加是很简单的，下面是一个记录的案例：
+[ { &amp;#34;域名&amp;#34;:&amp;#34;a.lo&amp;#34;, &amp;#34;记录类型&amp;#34;:&amp;#34;a&amp;#34;, &amp;#34;IPV4地址&amp;#34;:&amp;#34;192.168.1.110&amp;#34; }] 这个记录案例表示这条资源记录（RR）的记录类型是A类型记录（简称a记录），域名a.lo的IPv4地址是192.168.1.110。如果你在命令行或者终端ping a.lo则会获得192.168.1.110的IP回答，如果你在浏览器输入http://a.lo，则浏览器访问的IP是192.168.1.110:80。
+ 不被广泛认识的顶级域名，浏览器是不知道它是域名的，所以第一次访问的时候需要加上http://，告诉浏览器它是一个域名，第二次访问它则不需要加上http://因为浏览器知道了。自己定义的顶级域名lo、la、a等等，属于不被广泛认识的顶级域名。
+而com、cn、org等域名是被广泛认识的顶级域名。 在浏览器输入b.lo会跳转到搜索引擎，所以第一次需要输入http://b.lo，后面就不用了。
+在浏览器输入b.com，则第一次访问它无需加http://，浏览器也不会跳转到搜索引擎。   你应该在想，那我设计一个一模一样的网站放在我的主机上，然后把它的域名解析到我的主机的IP上，是不是就是一个简单的陷阱了，不知情的用户访问，就可以获取到用户的账号密码了，的确可以。但我劝你不要这样做。
+你不应该把一个已存在的域名拿来用，因为这样你就用不了原本域名的服务了。  </description>
+    </item>
+    
+    <item>
+      <title>记录类型</title>
+      <link>https://tankdns.tankprint.online/resource-records/record-type/</link>
+      <pubDate>Wed, 18 May 2022 16:38:13 +0800</pubDate>
+      
+      <guid>https://tankdns.tankprint.online/resource-records/record-type/</guid>
+      <description>我总结了最常见的RR的记录类型，如下表所示：
+   记录类型 TankDNS支持 简短描述     A 是 IPv4地址   NS 是 权威域名服务器   CNAME 是 别名的规范名称   AAAA 是 IPv6地址   MX 是 邮件交换服务器   TXT 是 文本值   SOA 否    WKS 否    PTR 否    HINFO 否    SIG 否    KEY 否    NXT 否    CERT 否    A6 否    AXFR 否    IXFR 否    * 否     </description>
+    </item>
+    
+    <item>
+      <title>资源记录管理</title>
+      <link>https://tankdns.tankprint.online/resource-records/record-manage/</link>
+      <pubDate>Wed, 18 May 2022 16:43:48 +0800</pubDate>
+      
+      <guid>https://tankdns.tankprint.online/resource-records/record-manage/</guid>
+      <description>目前坦克DNS只支持记录类型中的6种类型的记录，如果您配置了其他不支持的记录类型，软件会无法识别，也就不会运行。现阶段坦克DNS没有功能提示records.json错误出现在哪一行。
+   A记录  添加A记录 测试：   NS记录  添加NS记录 测试：   AAAA记录  添加IPv6地址 测试：   MX记录  添加mx记录 测试：   CNAME记录  添加CNAME记录 测试：   TXT记录  测试：   完整代码      A记录     添加A记录     a记录ip地址必须是合法IPv4地址，否则会出错。
+[ { &amp;#34;域名&amp;#34;:&amp;#34;www.b.lo&amp;#34;, &amp;#34;记录类型&amp;#34;:&amp;#34;a&amp;#34;, &amp;#34;IPV4地址&amp;#34;:&amp;#34;192.168.1.115&amp;#34; }] 测试：     在Linux终端或Windows PowerShell执行：
+nslookup -query=a www.</description>
+    </item>
+    
+  </channel>
+</rss>
