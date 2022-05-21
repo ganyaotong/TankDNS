@@ -2,6 +2,7 @@ baseURL = 'https://tankdns.tankprint.online'
 languageCode = 'zh-cn'
 title = '坦克DNS官方网站'
 theme = 'geekdoc'
+publishDir="docs"
 
 pluralizeListTitles = false
 

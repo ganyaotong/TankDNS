@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>使用 on 坦克DNS官方网站</title>
+    <link>https://tankdns.tankprint.online/usage/</link>
+    <description>Recent content in 使用 on 坦克DNS官方网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 17 May 2022 22:20:26 +0800</lastBuildDate><atom:link href="https://tankdns.tankprint.online/usage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>马上开始</title>
+      <link>https://tankdns.tankprint.online/usage/getting-started/</link>
+      <pubDate>Tue, 17 May 2022 22:17:17 +0800</pubDate>
+      
+      <guid>https://tankdns.tankprint.online/usage/getting-started/</guid>
+      <description>这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。
+配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。 
+添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
+[ { &amp;#34;域名&amp;#34;: &amp;#34;a.a&amp;#34;, &amp;#34;记录类型&amp;#34;: &amp;#34;a&amp;#34;, &amp;#34;IPV4地址&amp;#34;: &amp;#34;127.0.0.1&amp;#34; }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：
+[ { &amp;#34;域名&amp;#34;: &amp;#34;a.a&amp;#34;, &amp;#34;记录类型&amp;#34;: &amp;#34;a&amp;#34;, &amp;#34;IPV4地址&amp;#34;: &amp;#34;127.0.0.1&amp;#34; }, { &amp;#34;域名&amp;#34;:&amp;#34;www.b.com&amp;#34;, &amp;#34;记录类型&amp;#34;:&amp;#34;a&amp;#34;, &amp;#34;IPV4地址&amp;#34;:&amp;#34;127.0.0.1&amp;#34; }] 保存。重启TankDNS软件。
+测试     打开Windows PowerShell执行：
+ping www.b.com
+输出：</description>
+    </item>
+    
+    <item>
+      <title>配置</title>
+      <link>https://tankdns.tankprint.online/usage/configuration/</link>
+      <pubDate>Tue, 17 May 2022 23:39:55 +0800</pubDate>
+      
+      <guid>https://tankdns.tankprint.online/usage/configuration/</guid>
+      <description>这篇文字主要讲了两层次的配置，包括一个必须的本地配置和一个可选的路由器配置，如果你只是单机使用，则无需配置路由器。    本地配置  回环地址 配置视频   路由器配置（可选）  故事 静态IP 为电脑分配静态IP 配置DHCP服务器   总结      本地配置     使用坦克DNS是必须要进行本地配置的，需要配置DNS服务器地址，配置过程很简单。
+回环地址     这些视频会使用一个叫回环地址的IP，即127.0.0.1这个IP，这个IP就是电脑的自身地址，就像你叫“爸”代表的是你爸，你同学叫“爸”代表你同学的爸，你通过127.0.0.1访问你的电脑，你同学通过127.0.0.1访问的是他的电脑一样。你不能通过回环地址访问到你同学的电脑，你叫“爸”，你同学的爸不会答应。
+配置视频     Windows 10 ↕  这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。    CentOS Stream 9（Ubuntu desktop 22类似） ↕  这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   Ubuntu需要关闭自带的域名解析器，使用下列命令 sudo systemctl disable systemd-resolved.service 然后重启电脑。 如果要重新打开自带的域名解析器，将上面的命令disable改为enable后执行一次，重启电脑即可。    深度桌面 20 ↕  这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。    优麒麟 22 ↕  这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   优麒麟需要关闭自带的域名解析器，使用下列命令 sudo systemctl disable systemd-resolved.</description>
+    </item>
+    
+  </channel>
+</rss>
