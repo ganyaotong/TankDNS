@@ -9,13 +9,10 @@
 
 
   <meta name="description" content="这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。
-配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。 
-添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
+配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   目前，坦克DNS软件还不支持单独使用，即你需要配置备选DNS服务器地址，如114.114.114.114，如果只配置本机地址，你可能无法访问因特网。  添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }, { &#34;域名&#34;:&#34;www.b.com&#34;, &#34;记录类型&#34;:&#34;a&#34;, &#34;IPV4地址&#34;:&#34;127.0.0.1&#34; }] 保存。重启TankDNS软件。
-测试     打开Windows PowerShell执行：
-ping www.b.com
-输出：" />
+测试     打开Windows PowerShell执行：" />
 
     <title>开始使用 | 坦克DNS官方网站</title>
 
@@ -42,13 +39,10 @@ ping www.b.com
   />
   <meta property="og:site_name" content="坦克DNS官方网站" />
   <meta property="og:description" content="这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。
-配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。 
-添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
+配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   目前，坦克DNS软件还不支持单独使用，即你需要配置备选DNS服务器地址，如114.114.114.114，如果只配置本机地址，你可能无法访问因特网。  添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }, { &#34;域名&#34;:&#34;www.b.com&#34;, &#34;记录类型&#34;:&#34;a&#34;, &#34;IPV4地址&#34;:&#34;127.0.0.1&#34; }] 保存。重启TankDNS软件。
-测试     打开Windows PowerShell执行：
-ping www.b.com
-输出：" />
+测试     打开Windows PowerShell执行：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tankdns.tankprint.online/usage/getting-started/" />
 
@@ -66,13 +60,10 @@ ping www.b.com
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="开始使用" />
   <meta name="twitter:description" content="这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。
-配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。 
-添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
+配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   目前，坦克DNS软件还不支持单独使用，即你需要配置备选DNS服务器地址，如114.114.114.114，如果只配置本机地址，你可能无法访问因特网。  添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：
 [ { &#34;域名&#34;: &#34;a.a&#34;, &#34;记录类型&#34;: &#34;a&#34;, &#34;IPV4地址&#34;: &#34;127.0.0.1&#34; }, { &#34;域名&#34;:&#34;www.b.com&#34;, &#34;记录类型&#34;:&#34;a&#34;, &#34;IPV4地址&#34;:&#34;127.0.0.1&#34; }] 保存。重启TankDNS软件。
-测试     打开Windows PowerShell执行：
-ping www.b.com
-输出：" />
+测试     打开Windows PowerShell执行：" />
 
 
   <script type="application/ld+json">
@@ -83,8 +74,8 @@ ping www.b.com
       "name": "开始使用",
       "url" : "https://tankdns.tankprint.online/usage/getting-started/",
       "headline": "开始使用",
-      "description": "这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。\n配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。 \n添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：\n[ { \u0022域名\u0022: \u0022a.a\u0022, \u0022记录类型\u0022: \u0022a\u0022, \u0022IPV4地址\u0022: \u0022127.0.0.1\u0022 }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：\n[ { \u0022域名\u0022: \u0022a.a\u0022, \u0022记录类型\u0022: \u0022a\u0022, \u0022IPV4地址\u0022: \u0022127.0.0.1\u0022 }, { \u0022域名\u0022:\u0022www.b.com\u0022, \u0022记录类型\u0022:\u0022a\u0022, \u0022IPV4地址\u0022:\u0022127.0.0.1\u0022 }] 保存。重启TankDNS软件。\n测试     打开Windows PowerShell执行：\nping www.b.com\n输出：",
-      "wordCount" : "108",
+      "description": "这篇文字主要简单告诉您开始使用坦克DNS，包括下载安装坦克DNS，还有在配置文件添加一个A记录。    安装 配置 添加记录 测试 总结      安装     新建文件夹，重命名TankDev，下载坦克DNS，把下载下来的坦克DNS应用放到文件夹，安装完成。\n配置     windows 10配置本地DNS服务器，如果要获取Linux系统配置信息，点击配置 这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。   目前，坦克DNS软件还不支持单独使用，即你需要配置备选DNS服务器地址，如114.114.114.114，如果只配置本机地址，你可能无法访问因特网。  添加记录     到这一步我们双击TankDNS软件运行它，初次运行会生成一个records.json，想知道什么是JSON格式，点击这里了解。接着打开records.json文件，这个文件自带了一条A记录，这条记录用于测试，这条记录可以删除，像下面这样子：\n[ { \u0022域名\u0022: \u0022a.a\u0022, \u0022记录类型\u0022: \u0022a\u0022, \u0022IPV4地址\u0022: \u0022127.0.0.1\u0022 }] 我接下来添加一条我们自定义的a记录，a记录ip地址必须是合法IPv4地址，否则会出错。如下：\n[ { \u0022域名\u0022: \u0022a.a\u0022, \u0022记录类型\u0022: \u0022a\u0022, \u0022IPV4地址\u0022: \u0022127.0.0.1\u0022 }, { \u0022域名\u0022:\u0022www.b.com\u0022, \u0022记录类型\u0022:\u0022a\u0022, \u0022IPV4地址\u0022:\u0022127.0.0.1\u0022 }] 保存。重启TankDNS软件。\n测试     打开Windows PowerShell执行：",
+      "wordCount" : "109",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
@@ -815,7 +806,17 @@ ping www.b.com
 <video style="max-width: 100%;" class="video-shortcode" preload="auto"  controls>
     <source src='/video/TankDNS.configuration.window.mp4' type='video/mp4'>
     这里显示视频，如果您看到这句话，则表示您的浏览器不支持视频播放，请使用Chrome浏览器。
-</video></p>
+</video>
+
+
+
+
+
+<blockquote class="gdoc-hint warning">
+  <div class="gdoc-hint__title flex align-center"><i class="fa warning" title="警告"></i></div>
+  <div class="gdoc-hint__text">目前，坦克DNS软件还不支持单独使用，即你需要配置备选DNS服务器地址，如<code>114.114.114.114</code>，如果只配置本机地址，你可能无法访问因特网。</div>
+</blockquote>
+</p>
 <div class="gdoc-page__anchorwrap">
     <h2 id="添加记录">
         添加记录
